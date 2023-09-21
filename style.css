@@ -10,21 +10,33 @@
 }
 
 nav {
+    background: #fff;
     display: flex;
-    justify-content: space-between;
-    gap: 80px;
     align-items: center;
-    padding: 30px 0px;
-    font-size: 32px;
+    gap: 200px;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0px;
+}
+
+.inner-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 .navigation ul {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     align-items: center;
 }
 
@@ -35,14 +47,17 @@ a {
 
 
 .navigation ul li {
+    display: flex;
+    justify-content: center;
+    background: #fff;
     border-radius: 5px;
-    padding: 12px 16px;
+    padding: 10px 12px;
     list-style: none;
     cursor: pointer;
 }
 
 .navigation ul li a {
-    width: 100%;
+    font-size: 1.3rem;
     list-style: none;
     cursor: pointer;
     color: #222;
@@ -51,7 +66,6 @@ a {
 .login {
     display: inline-flex;
     gap: 20px;
-    font-size: 32px;
 }
 
 .btn {
@@ -60,13 +74,13 @@ a {
 
 .btn-1,
 .btn-2 {
-    padding: 12px 16px;
+    padding: 10px 12px;
     border-radius: 5px;
 }
 
 .btn a {
-    font-weight: bold;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 1.3rem;
 
 }
 
@@ -120,6 +134,7 @@ a {
 }
 
 .head {
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -129,7 +144,7 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     font-family: Gip, sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 130%;
 }
@@ -172,13 +187,13 @@ video {
 .list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 4rem;
     margin-bottom: 100px;
 
 }
 
 .bor div h2 {
-
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 130%;
 }
@@ -196,7 +211,7 @@ video {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 30px;
-    border: 1px solid #333;
+    border: 1px solid #858585;
     border-radius: 8px;
 }
 
@@ -213,6 +228,95 @@ video {
     display: flex;
     flex-direction: column;
 }
+
+.section-1 {
+    background-color: #f4f4f4;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 50px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.card div h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.card p {
+    font-size: 1.2 rem;
+    color: #525252;
+}
+
+.min-btn {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 576px) {
     .container {
@@ -242,9 +346,9 @@ video {
     }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
     .container {
-        width: 1320px;
+        width: 1520px;
 
     }
 }
