@@ -9,8 +9,16 @@
     padding: 0px 20px;
 }
 
+.charset {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
 nav {
     background: #fff;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 200px;
@@ -238,14 +246,13 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    padding-bottom: 100px;
+    gap: 60px;
 }
 
 .header-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 3rem;
+    margin-top: 80px;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -260,23 +267,27 @@ video {
 .card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     background-color: #fff;
     border-radius: 8px;
-    padding: 50px;
+    padding: 30px;
 }
 
 .card img {
     display: block;
     width: 100%;
     max-height: 500px;
+    border-radius: 8px;
     background-position: center;
     background-size: cover;
 }
 
-.card div {
+
+
+.card img+div {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .card div h2 {
@@ -291,10 +302,95 @@ video {
 }
 
 .min-btn {
-    display: flex;
+    position: relative;
+    margin-top: 30px;
+
 }
 
 
+.min-btn div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #393939;
+    border-radius: 4px;
+    padding: 10px 16px;
+    color: #fff;
+}
+
+.section-2 {
+    background-color: #040404;
+    overflow: hidden;
+
+}
+
+.content-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    gap: 50px;
+}
+
+.header-3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.step-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.step {
+    background-color: rgba(224, 224, 224, .08);
+    border-radius: 8px;
+    padding: 24px;
+    border: 1px solid rgba(224, 224, 224, .08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.step-btn {
+    max-width: 150px;
+    background-color: #18ba51;
+    transition: background-color 80ms ease-in-out;
+    grid-column-gap: 4px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    display: flex;
+    border: none;
+}
+
+.step-btn a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.step h6 {
+    color: #a8a8a8;
+}
+
+.step h2 {
+    color: #fff;
+}
+
+.step p {
+    color: #333;
+}
 
 
 
